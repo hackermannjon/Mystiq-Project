@@ -14,25 +14,34 @@ export const Styles = createGlobalStyle`
         font-style: normal;
     }
 
-
     body,
     html,
     a {
         font-family: 'Motiva Sans Light', sans-serif;
     }
 
-
     body {
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #1d1d1b;
+        color: #ffffff;
         overflow-x: hidden;
     }
 
+    a {
+        text-decoration: none;
+        outline: none;
+        color: #ffffff;
+
+        :hover {
+            color: #ffffff;
+        }
+    }
+
     a:hover {
-        color: #18216d;
+        color: #ffffff;
     }
 
     input,
@@ -58,7 +67,7 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        color: #ffffff;
         font-size: 56px;
         line-height: 1.18;
 
@@ -71,26 +80,16 @@ export const Styles = createGlobalStyle`
         }
     }
 
-    p {
-        color: #18216d;
-        font-size: 21px;        
-        line-height: 1.41;
-    }
-
     h1 {
         font-weight: 600;
     }
 
-    a {
-        text-decoration: none;
-        outline: none;
-        color: #2E186A;
-
-        :hover {
-            color: #2e186a;
-        }
+    p {
+        color: #ffffff;
+        font-size: 21px;        
+        line-height: 1.41;
     }
-    
+
     *:focus {
         outline: none;
     }
