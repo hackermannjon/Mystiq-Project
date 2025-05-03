@@ -30,6 +30,11 @@ export const Styles = createGlobalStyle`
         overflow-x: hidden;
     }
 
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
     a {
         text-decoration: none;
         outline: none;

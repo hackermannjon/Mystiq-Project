@@ -14,6 +14,7 @@ import {
   MinPara,
   StyledRow,
   ButtonWrapper,
+  Title,
 } from "./styles";
 
 const ContentBlock = ({
@@ -36,6 +37,9 @@ const ContentBlock = ({
   return (
     <ContentSection>
       <Fade direction={direction} triggerOnce>
+        <Row id={id}>
+          <Title>{t(title).toUpperCase()}</Title>
+        </Row>
         <StyledRow
           justify="space-between"
           align="middle"
@@ -47,8 +51,7 @@ const ContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              <Content>{t(content).toUpperCase()}</Content>
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&

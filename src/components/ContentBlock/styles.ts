@@ -3,7 +3,9 @@ import styled from "styled-components";
 
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 2rem 0 5rem;
+  height: 100vh;
+  max-height: 100vh;
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
@@ -12,6 +14,10 @@ export const ContentSection = styled("section")`
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
+`;
+
+export const Title = styled("h6")`
+  color: #d1ff3e;
 `;
 
 export const StyledRow = styled(Row)`
