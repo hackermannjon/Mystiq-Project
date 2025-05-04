@@ -13,7 +13,7 @@ export const ContentContainer = styled("div")`
   background-position: center center;
   background-size: cover;
 
-  height: 105%;
+  height: 82vh;
 
   display: flex;
   align-items: center;
