@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled("div")`
   background-color: #111;
-  border: 1px solid #d1ff3e;
+  border: 1px solid #fff;
   padding: 2rem;
-  color: #a7cc31;
+  color: #fff;
   max-width: 600px;
-  border-radius: 4px;
+  border-radius: 10px;
 `;
 
 export const Title = styled("h2")`
@@ -15,7 +15,7 @@ export const Title = styled("h2")`
   margin: 0 0 1.5rem;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #d1ff3e;
+  color: #fff;
 `;
 
 export const List = styled("ul")`

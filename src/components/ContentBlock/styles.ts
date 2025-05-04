@@ -1,4 +1,3 @@
-import { Row } from "antd";
 import styled from "styled-components";
 
 export const ContentSection = styled("section")`
@@ -20,4 +19,6 @@ export const Subtitle = styled("p")`
   font-size: 20px;
   margin-top: 30px;
   max-width: 30%;
+  text-align: justify;
+  text-justify: inter-word;
 `;

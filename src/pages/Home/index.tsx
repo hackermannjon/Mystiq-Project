@@ -13,6 +13,7 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const IntroductionSection = lazy(() => import("./sections/Introduction"));
 const AboutSection = lazy(() => import("./sections/About"));
 const ServicesSection = lazy(() => import("./sections/Services"));
+const PortfolioSection = lazy(() => import("./sections/Portfolio"));
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <IntroductionSection />
       <AboutSection />
       <ServicesSection />
+      <PortfolioSection />
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
