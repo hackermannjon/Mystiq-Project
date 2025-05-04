@@ -16,7 +16,6 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   const ValidationType = ({ type }: ValidationTypeProps) => {
     // const ErrorMessage = errors[type as keyof typeof errors];
     const ErrorMessage = "* campo obrigatório";
-    console.log("@@@@@", errors, type);
     return <Span>{ErrorMessage}</Span>;
   };
 
