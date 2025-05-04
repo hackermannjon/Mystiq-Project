@@ -16,6 +16,13 @@ export interface IntroductionProps {
 }
 
 const Introduction = ({ t }: IntroductionProps) => {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id) as HTMLDivElement;
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Container id="intro">
       <Fade direction="left" triggerOnce>
@@ -26,7 +33,9 @@ const Introduction = ({ t }: IntroductionProps) => {
               <Subtitle isRight>{t("Introduction.title2")}</Subtitle>
             </SubtitleContainer>
             <Text>{t("Introduction.text")}</Text>
-            <Button isFilled>{t("Introduction.button")}</Button>
+            <Button onClick={() => scrollTo("contact")} isFilled>
+              {t("Introduction.button")}
+            </Button>
           </MiddleContainer>
         </ContentContainer>
       </Fade>
