@@ -14,13 +14,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
-    const ErrorMessage = errors[type as keyof typeof errors];
+    // const ErrorMessage = errors[type as keyof typeof errors];
+    const ErrorMessage = "* campo obrigatório";
+    console.log("@@@@@", errors, type);
     return <Span>{ErrorMessage}</Span>;
   };
 
   return (
     <ContactContainer id={id}>
-      <Row justify="space-between" align="middle">
+      <Row justify="space-between" align="top">
         <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
             <Block title={title} content={content} />
@@ -32,8 +34,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="name"
-                  placeholder="Your Name"
+                  name="nome"
+                  placeholder="Seu Nome"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -43,7 +45,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Seu Email"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -51,9 +53,9 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder="Your Message"
+                  placeholder="Sua Mensagem"
                   value={values.message || ""}
-                  name="message"
+                  name="mensagem"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />

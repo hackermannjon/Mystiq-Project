@@ -13,3 +13,7 @@ export const TextWrapper = styled("div")`
   border-radius: 3rem;
   max-width: 400px;
 `;
+
+export const Title = styled("h6")`
+  color: #d1ff3e;
+`;

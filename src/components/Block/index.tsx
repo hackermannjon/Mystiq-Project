@@ -1,5 +1,5 @@
 import { withTranslation, TFunction } from "react-i18next";
-import { Container, TextWrapper, Content } from "./styles";
+import { Container, TextWrapper, Content, Title } from "./styles";
 
 interface Props {
   title: string;
@@ -10,9 +10,9 @@ interface Props {
 const Block = ({ title, content, t }: Props) => {
   return (
     <Container>
-      <h6>{t(title)}</h6>
+      <Title>{t(title).toUpperCase()}</Title>
       <TextWrapper>
-        <Content>{t(content)}</Content>
+        <Content>{t(content).toUpperCase()}</Content>
       </TextWrapper>
     </Container>
   );

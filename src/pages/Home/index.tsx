@@ -24,8 +24,8 @@ const Home = () => {
       <ServicesSection />
       <PortfolioSection />
       <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
+        title={"ENTRE EM CONTATO"}
+        content={"Nos contate hoje e vamos deixar sua marca reconhecível!"}
         id="contact"
       />
     </Container>
