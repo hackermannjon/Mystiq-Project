@@ -36,7 +36,7 @@ export const Text = styled("p")`
 export const LeftSection = styled("div")`
   display: flex;
   align-items: flex-end;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 export const RightSection = styled("div")`
