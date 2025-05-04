@@ -17,6 +17,7 @@ export const Title = styled("h5")`
 `;
 
 export const Subtitle = styled("p")`
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 30px;
+  max-width: 30%;
 `;
