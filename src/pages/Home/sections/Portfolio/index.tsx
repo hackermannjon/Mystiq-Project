@@ -26,7 +26,7 @@ const Portfolio = () => {
 
   return (
     <ContentBlock
-      title="Portifólio"
+      title="Portfólio"
       subtitle="Nós criamos estratégias efetivas, conteúdo único e campanhas eficientes que trazem resultados. Veja nossas soluções."
       direction="right"
       id="portfolio"
