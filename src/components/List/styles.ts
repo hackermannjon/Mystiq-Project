@@ -17,6 +17,19 @@ export const Item = styled.div`
   padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: justify;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    color: #92b32b;
+    border-color: #92b32b;
+    h3 {
+      color: #d1ff3e;
+    }
+    p {
+      color: #92b32b;
+    }
+  }
 `;
 
 export const Title = styled.h3`

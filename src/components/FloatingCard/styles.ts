@@ -5,6 +5,18 @@ export const Container = styled("div")`
   flex-direction: column;
   width: 200px;
   gap: 5px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    div {
+      border-color: #92b32b;
+    }
+    p {
+      color: #92b32b;
+    }
+  }
 `;
 
 export const Card = styled("div")<{ isEven: boolean }>`

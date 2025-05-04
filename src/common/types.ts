@@ -21,6 +21,7 @@ export interface SvgIconProps {
 export interface InputProps {
   name: string;
   placeholder: string;
+  label: string;
   t: TFunction;
   type?: string;
   value?: string;

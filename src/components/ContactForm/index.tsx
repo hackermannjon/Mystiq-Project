@@ -14,8 +14,8 @@ const Contact = ({ t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
-    // const ErrorMessage = errors[type as keyof typeof errors];
-    const ErrorMessage = t("Contact.error");
+    const parsedErrors = errors[type as keyof typeof errors];
+    const ErrorMessage = parsedErrors?.length ? t("Contact.error") : null;
     return <Span>{ErrorMessage}</Span>;
   };
 
@@ -33,7 +33,8 @@ const Contact = ({ t }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name={t("Contact.inputs.name.label")}
+                  name={"name"}
+                  label={t("Contact.inputs.name.label")}
                   placeholder={t("Contact.inputs.name.placeholder")}
                   value={values.name || ""}
                   onChange={handleChange}
@@ -43,7 +44,8 @@ const Contact = ({ t }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name={t("Contact.inputs.email.label")}
+                  name={"email"}
+                  label={t("Contact.inputs.email.label")}
                   placeholder={t("Contact.inputs.email.placeholder")}
                   value={values.email || ""}
                   onChange={handleChange}
@@ -53,7 +55,8 @@ const Contact = ({ t }: ContactProps) => {
               <Col span={24}>
                 <TextArea
                   value={values.message || ""}
-                  name={t("Contact.inputs.message.label")}
+                  name={"message"}
+                  label={t("Contact.inputs.message.label")}
                   placeholder={t("Contact.inputs.message.placeholder")}
                   onChange={handleChange}
                 />
