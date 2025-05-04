@@ -2,35 +2,39 @@ import React from "react";
 import ContentBlock from "../../../../components/ContentBlock";
 import List from "../../../../components/List";
 import { ListContainer } from "./styles";
+import { TFunction, withTranslation } from "react-i18next";
 
-interface AboutProps {}
+interface AboutProps {
+  t: TFunction;
+}
 
-const About = ({}: AboutProps) => {
+const About = ({ t }: AboutProps) => {
   const items = [
     {
-      title: "ANALYSIS AND STRATEGY",
-      description:
-        "We study the market, competitors and target audience. Develop an individual marketing strategy. Define key KPIs to achieve results.",
+      title: t("About.items.0.title"),
+      description: t("About.items.0.description"),
     },
     {
-      title: "DEVELOPMENT AND IMPLEMENTATION",
-      description:
-        "We launch SEO, ads, content marketing, develop branding. We optimise websites and create landing pages.",
+      title: t("About.items.1.title"),
+      description: t("About.items.1.description"),
     },
     {
-      title: "LAUNCH AND TESTING",
-      description:
-        "We launch advertising and A/B test creatives and optimize for ROI. Analyse user behaviour and improve conversions.",
+      title: t("About.items.2.title"),
+      description: t("About.items.2.description"),
     },
     {
-      title: "MONITORING AND SCALING",
-      description:
-        "We adapt strategies to market changes, scale top campaigns. Provide the client with detailed reports and analytics.",
+      title: t("About.items.3.title"),
+      description: t("About.items.3.description"),
     },
   ];
 
   return (
-    <ContentBlock id="about" title="Nós somos..." direction="right">
+    <ContentBlock
+      id={"about"}
+      title={t("About.title")}
+      subtitle={t("About.subtitle")}
+      direction="right"
+    >
       <ListContainer>
         <List items={items} />
       </ListContainer>
@@ -38,4 +42,4 @@ const About = ({}: AboutProps) => {
   );
 };
 
-export default About;
+export default withTranslation()(About);

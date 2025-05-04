@@ -13,6 +13,7 @@ export const ContentSection = styled("section")`
 
 export const Title = styled("h5")`
   color: #d1ff3e;
+  text-transform: uppercase;
 `;
 
 export const Subtitle = styled("p")`
@@ -21,4 +22,5 @@ export const Subtitle = styled("p")`
   max-width: 30%;
   text-align: justify;
   text-justify: inter-word;
+  text-transform: uppercase;
 `;

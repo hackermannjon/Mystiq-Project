@@ -2,42 +2,46 @@ import React from "react";
 import ContentBlock from "../../../../components/ContentBlock";
 import Card from "../../../../components/Card";
 import { CardsContainer } from "./styles";
+import { TFunction, withTranslation } from "react-i18next";
 
-const Services = () => {
+interface ServicesProps {
+  t: TFunction;
+}
+const Services = ({ t }: ServicesProps) => {
   const cards = [
     {
-      title: "Targeted Advertising and Lead Generation",
+      title: t("Services.cards.0.title"),
       items: [
-        "Small and medium-sized enterprises.",
-        "Startups – new brands.",
-        "Large companies.",
-        "E-commerce and B2B.",
+        t("Services.cards.0.items.0"),
+        t("Services.cards.0.items.1"),
+        t("Services.cards.0.items.2"),
+        t("Services.cards.0.items.3"),
       ],
     },
     {
-      title: "Advertising Campaigns Analysis",
+      title: t("Services.cards.1.title"),
       items: [
-        "Audit of marketing activities.",
-        "Advertising optimisation.",
-        "Improving the content strategy.",
-        "Analytical tools to track performance.",
+        t("Services.cards.1.items.0"),
+        t("Services.cards.1.items.1"),
+        t("Services.cards.1.items.2"),
+        t("Services.cards.1.items.3"),
       ],
     },
     {
-      title: "SEO-Optimisation",
+      title: t("Services.cards.2.title"),
       items: [
-        "Website audit and keyword research.",
-        "Content marketing and link building.",
-        "Technical optimisation.",
-        "Technical optimisation.",
+        t("Services.cards.2.items.0"),
+        t("Services.cards.2.items.1"),
+        t("Services.cards.2.items.2"),
+        t("Services.cards.2.items.3"),
       ],
     },
     {
-      title: "Banners and Logo",
+      title: t("Services.cards.3.title"),
       items: [
-        "Adaptation to different formats.",
-        "Design of advertising banners.",
-        "Adaptation to different formats.",
+        t("Services.cards.3.items.0"),
+        t("Services.cards.3.items.1"),
+        t("Services.cards.3.items.2"),
       ],
     },
   ];
@@ -45,8 +49,8 @@ const Services = () => {
   return (
     <ContentBlock
       id="services"
-      title="Nossos serviços"
-      subtitle="Mystiq é uma Agência de Marketing que combina análise, design e marketing para te ajudar a alcançar seus objetivos."
+      title={t("Services.title")}
+      subtitle={t("Services.subtitle")}
       direction="left"
     >
       <CardsContainer>
@@ -58,4 +62,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default withTranslation()(Services);

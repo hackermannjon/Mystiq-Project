@@ -10,21 +10,21 @@ import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
-const Contact = ({ title, content, id, t }: ContactProps) => {
+const Contact = ({ t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
     // const ErrorMessage = errors[type as keyof typeof errors];
-    const ErrorMessage = "* campo obrigatório";
+    const ErrorMessage = t("Contact.error");
     return <Span>{ErrorMessage}</Span>;
   };
 
   return (
-    <ContactContainer id={id}>
+    <ContactContainer id={"contact"}>
       <Row justify="space-between" align="top">
         <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
-            <Block title={title} content={content} />
+            <Block title={t("Contact.title")} content={t("Contact.content")} />
           </Slide>
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
@@ -33,8 +33,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="nome"
-                  placeholder="Seu Nome"
+                  name={t("Contact.inputs.name.label")}
+                  placeholder={t("Contact.inputs.name.placeholder")}
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -43,8 +43,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="email"
-                  placeholder="Seu Email"
+                  name={t("Contact.inputs.email.label")}
+                  placeholder={t("Contact.inputs.email.placeholder")}
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -52,15 +52,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder="Sua Mensagem"
                   value={values.message || ""}
-                  name="mensagem"
+                  name={t("Contact.inputs.message.label")}
+                  placeholder={t("Contact.inputs.message.placeholder")}
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Enviar")}</Button>
+                <Button name="submit">{t("Contact.button")}</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>

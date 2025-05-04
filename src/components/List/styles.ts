@@ -11,11 +11,12 @@ export const Container = styled.div`
 
 export const Item = styled.div`
   display: grid;
-  gap: 300px;
+  gap: 10rem;
   grid-template-columns: minmax(400px, 1fr) 2fr;
   align-items: center;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: justify;
 `;
 
 export const Title = styled.h3`

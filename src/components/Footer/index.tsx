@@ -51,7 +51,7 @@ const Footer = ({ t }: { t: TFunction }) => {
   return (
     <Extra>
       <LeftSection>
-        <Text>2025 Todos os direitos reservados</Text>
+        <Text>{t("Footer.rights")}</Text>
 
         <NavLink to="/">
           <LogoContainer>
@@ -71,19 +71,19 @@ const Footer = ({ t }: { t: TFunction }) => {
         </FooterContainer>
       </LeftSection>
       <RightSection>
-        <Label htmlFor="select-lang">{t("Language")}</Label>
+        <Label htmlFor="select-lang">{t("Footer.language")}</Label>
         <LanguageSwitchContainer>
-          <LanguageSwitch onClick={() => handleChange("en")}>
+          <LanguageSwitch onClick={() => handleChange("ptBR")}>
             <SvgIcon
-              src="united-states.svg"
+              src="brazil.svg"
               aria-label="homepage"
               width="30px"
               height="30px"
             />
           </LanguageSwitch>
-          <LanguageSwitch onClick={() => handleChange("es")}>
+          <LanguageSwitch onClick={() => handleChange("en")}>
             <SvgIcon
-              src="spain.svg"
+              src="united-states.svg"
               aria-label="homepage"
               width="30px"
               height="30px"

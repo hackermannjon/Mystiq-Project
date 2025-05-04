@@ -5,5 +5,5 @@ export const ListContainer = styled("div")`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
 `;

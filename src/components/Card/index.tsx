@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Container, Title, List, ListItem } from "./styles";
+import { withTranslation } from "react-i18next";
 
 interface CardProps {
   title: string;
@@ -20,4 +21,4 @@ const Card = ({ title, items }: CardProps) => {
   );
 };
 
-export default Card;
+export default withTranslation()(Card);

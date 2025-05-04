@@ -10,9 +10,9 @@ interface Props {
 const Block = ({ title, content, t }: Props) => {
   return (
     <Container>
-      <Title>{t(title).toUpperCase()}</Title>
+      <Title>{t(title)}</Title>
       <TextWrapper>
-        <Content>{t(content).toUpperCase()}</Content>
+        <Content>{t(content)}</Content>
       </TextWrapper>
     </Container>
   );

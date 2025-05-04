@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Image, Caption, Container } from "./styles";
+import { withTranslation } from "react-i18next";
 
 interface FloatingCardProps {
   src: string;
@@ -21,4 +22,4 @@ const FloatingCard = ({ src, alt, caption, index }: FloatingCardProps) => {
   );
 };
 
-export default FloatingCard;
+export default withTranslation()(FloatingCard);

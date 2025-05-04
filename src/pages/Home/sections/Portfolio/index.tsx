@@ -3,31 +3,36 @@ import ContentBlock from "../../../../components/ContentBlock";
 import FloatingCard from "../../../../components/FloatingCard";
 import { Container } from "./styles";
 import portfolioImg from "../../../../assets/portfolio.jpg";
+import { TFunction, withTranslation } from "react-i18next";
 
-const Portfolio = () => {
+interface PortfolioProps {
+  t: TFunction;
+}
+
+const Portfolio = ({ t }: PortfolioProps) => {
   const cardsData = [
     {
       src: portfolioImg,
-      caption: "Brand Launch Kit for a tech startup",
+      caption: t("PortfolioSection.cards.0"),
     },
     {
       src: portfolioImg,
-      caption: "Digital promotion of a clothing brand",
+      caption: t("PortfolioSection.cards.1"),
     },
     {
       src: portfolioImg,
-      caption: "Developing a content strategy for a jewellery brand",
+      caption: t("PortfolioSection.cards.2"),
     },
     {
       src: portfolioImg,
-      caption: "Branding and logo development for a coffee shop",
+      caption: t("PortfolioSection.cards.3"),
     },
   ];
 
   return (
     <ContentBlock
-      title="Portfólio"
-      subtitle="Nós criamos estratégias efetivas, conteúdo único e campanhas eficientes que trazem resultados. Veja nossas soluções."
+      title={t("PortfolioSection.title")}
+      subtitle={t("PortfolioSection.subtitle")}
       direction="right"
       id="portfolio"
     >
@@ -46,4 +51,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default withTranslation()(Portfolio);

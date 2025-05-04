@@ -21,18 +21,18 @@ const ContentBlock = ({
   };
 
   return (
-    <ContentSection>
+    <ContentSection id={id}>
       <Fade direction={direction} triggerOnce>
         {title ? (
           <Row id={`${id}-title`}>
-            <Title>{t(title)?.toUpperCase()}</Title>
+            <Title>{t(title)}</Title>
           </Row>
         ) : (
           <></>
         )}
         {subtitle ? (
           <Row id={`${id}-subtitle`}>
-            <Subtitle>{t(subtitle)?.toUpperCase()}</Subtitle>
+            <Subtitle>{t(subtitle)}</Subtitle>
           </Row>
         ) : (
           <></>

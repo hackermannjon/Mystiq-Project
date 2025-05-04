@@ -1,6 +1,5 @@
 import React from "react";
-import { Title } from "../../../../components/ContentBlock/styles";
-import { withTranslation } from "react-i18next";
+import { TFunction, withTranslation } from "react-i18next";
 import {
   Container,
   ContentContainer,
@@ -12,23 +11,22 @@ import {
 import { Button } from "../../../../common/Button";
 import { Fade } from "react-awesome-reveal";
 
-export interface IntroductionProps {}
+export interface IntroductionProps {
+  t: TFunction;
+}
 
-const Introduction = ({}: IntroductionProps) => {
+const Introduction = ({ t }: IntroductionProps) => {
   return (
     <Container id="intro">
       <Fade direction="left" triggerOnce>
         <ContentContainer>
           <MiddleContainer>
             <SubtitleContainer>
-              <Subtitle>MARKETING</Subtitle>
-              <Subtitle isRight>DE VALOR</Subtitle>
+              <Subtitle>{t("Introduction.title1")}</Subtitle>
+              <Subtitle isRight>{t("Introduction.title2")}</Subtitle>
             </SubtitleContainer>
-            <Text>
-              Desvendamos o segredo das vendas. Estratégias que atraem,
-              convertem e escalam.
-            </Text>
-            <Button isFilled>Agende uma reunião</Button>
+            <Text>{t("Introduction.text")}</Text>
+            <Button isFilled>{t("Introduction.button")}</Button>
           </MiddleContainer>
         </ContentContainer>
       </Fade>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled("p")`
   margin-top: 1.5rem;
+  text-transform: uppercase;
 `;
 
 export const Container = styled("div")`
@@ -16,4 +17,5 @@ export const TextWrapper = styled("div")`
 
 export const Title = styled("h6")`
   color: #d1ff3e;
+  text-transform: uppercase;
 `;

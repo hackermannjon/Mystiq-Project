@@ -1,28 +1,111 @@
 {
-  "About": "About",
-  "Policy": "Policy",
-  "Mission": "Mission",
-  "Product": "Product",
-  "Tell us everything": "Tell us everything",
-  "Contact": "Contact",
-  "Do you have any question? Feel free to reach out.": "Do you have any question? Feel free to reach out.",
-  "Let's Chat": "Let's Chat",
-  "Application Security": "Application Security",
-  "Software Principles": "Software Principles",
-  "Support Center": "Support Center",
-  "Customer Support": "Customer Support",
-  "Address": "Address",
-  "Press": "Press",
-  "Careers & Culture": "Careers & Culture",
-  "Language": "Language",
-  "Explore": "Explore",
-  "Learn more": "Learn more",
-  "Get started": "Get started",
-  "Submit": "Submit",
-  "Message" : "Message",
-  "Your Message": "Your Message",
-  "Name" : "Name",
-  "Your Name": "Your Name",
-  "Email" : "Email",
-  "Your Email": "Your Email"
+  "Header": {
+    "about": "About Us",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact Us"
+  },
+  "Footer": {
+    "rights": "2025 All Rights Reserved",
+    "language": "Language"
+  },
+  "Introduction": {
+    "title1": "Marketing",
+    "title2": "of Value",
+    "text": "We unveil the secret of sales. Strategies that attract, convert, and scale.",
+    "button": "Schedule a Meeting"
+  },
+  "About": {
+    "title": "We are...",
+    "subtitle": "MYSTIQ IS A MARKETING AGENCY THAT COMBINES ANALYSIS, DESIGN, AND MARKETING TO HELP YOU ACHIEVE YOUR GOALS.",
+    "items": [
+      {
+        "title": "Analysis and Strategy",
+        "description": "We study the market, competitors, and target audience. We develop an individual marketing strategy. We define KPIs to achieve results."
+      },
+      {
+        "title": "DEVELOPMENT AND IMPLEMENTATION",
+        "description": "We launch SEO, ads, content marketing, and develop brand identity. We optimize websites and create landing pages."
+      },
+      {
+        "title": "LAUNCH AND TESTING",
+        "description": "We launch campaigns, conduct A/B tests on creatives, and optimize for ROI. We analyze user behavior and improve conversions."
+      },
+      {
+        "title": "MONITORING AND SCALING",
+        "description": "We adapt strategies to market changes and scale high-performing campaigns. We provide clients with detailed reports and analytics."
+      }
+    ]
+  },
+  "Services": {
+    "title": "Nossos serviços",
+    "subtitle": "Oferecemos serviços de publicidade, análises, otimizações e branding. Ajudamos empresas a crescer e se destacar no mercado.",
+    "cards": [
+      {
+        "title": "Publicidade Direcionada e Geração de Leads",
+        "items": [
+          "Pequenas e médias empresas.",
+          "Startups – novas marcas.",
+          "Grandes empresas.",
+          "E-commerce e B2B."
+        ]
+      },
+      {
+        "title": "Análise de Campanhas Publicitárias",
+        "items": [
+          "Auditoria de atividades de marketing.",
+          "Otimização de anúncios.",
+          "Aprimoramento da estratégia de conteúdo.",
+          "Ferramentas analíticas para acompanhar o desempenho."
+        ]
+      },
+      {
+        "title": "Otimização de SEO",
+        "items": [
+          "Auditoria de site e pesquisa de palavras-chave.",
+          "Marketing de conteúdo e link building.",
+          "Otimização técnica.",
+          "Otimização técnica."
+        ]
+      },
+      {
+        "title": "Banners e Logotipo",
+        "items": [
+          "Adaptação a diferentes formatos.",
+          "Design de banners publicitários.",
+          "Adaptação a diferentes formatos."
+        ]
+      }
+    ]
+  },
+  "PortfolioSection": {
+    "title": "Portfolio",
+    "subtitle": "We create effective strategies, unique content, and efficient campaigns that deliver results. See our solutions.",
+    "cards": [
+      "Brand Launch Kit for a Technology Startup",
+      "Digital Promotion for a Clothing Brand",
+      "Content Strategy Development for a Jewelry Brand",
+      "Branding and Logo Development for a Coffee Shop"
+    ]
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "content": "Contact us today and make your brand recognizable!",
+    "error": "* required field",
+    "button": "Send",
+    "inputs": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your Email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your Message"
+      }
+    }
+  }
 }

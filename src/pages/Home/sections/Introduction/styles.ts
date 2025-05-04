@@ -38,6 +38,7 @@ export const Subtitle = styled("h6")<{ isRight?: boolean }>`
   color: #fff;
   font-size: 80px;
   line-height: 50px;
+  text-transform: uppercase;
   ${({ isRight }) =>
     isRight &&
     `

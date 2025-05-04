@@ -2,6 +2,7 @@ import React from "react";
 
 import { Fade } from "react-awesome-reveal";
 import { Container, Item, Title, Description } from "./styles";
+import { withTranslation } from "react-i18next";
 
 interface ListProps {
   items: {
@@ -23,4 +24,4 @@ export const List = ({ items }: ListProps) => (
   </Container>
 );
 
-export default List;
+export default withTranslation()(List);

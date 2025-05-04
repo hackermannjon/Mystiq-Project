@@ -1,0 +1,111 @@
+{
+  "Header": {
+    "about": "Sobre nós",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "contact": "Entre em contato"
+  },
+  "Footer": {
+    "rights": "2025 Todos os direitos reservados",
+    "language": "Linguagem"
+  },
+  "Introduction": {
+    "title1": "Marketing",
+    "title2": "de Valor",
+    "text": "Desvendamos o segredo das vendas. Estratégias que atraem, convertem e escalam.",
+    "button": "Agende uma reunião"
+  },
+  "About": {
+    "title": "Nós somos...",
+    "subtitle": "MYSTIQ É UMA AGÊNCIA DE MARKETING QUE COMBINA ANÁLISE, DESIGN E MARKETING PARA TE AJUDAR A ALCANÇAR SEUS OBJETIVOS.",
+    "items": [
+      {
+        "title": "Análise e Estratégia",
+        "description": "Nós estudamos o mercado, competidores e o público alvo. Desenvolvemos uma estratégia de marketing individual. Definimos KPIs para alcançar resultados."
+      },
+      {
+        "title": "DESENVOLVIMENTO E IMPLEMENTAÇÃO",
+        "description": "Lançamos SEO, anúncios, marketing de conteúdo e desenvolvemos a identidade da marca. Otimizamos sites e criamos landing pages."
+      },
+      {
+        "title": "LANÇAMENTO E TESTES",
+        "description": "Colocamos as campanhas no ar, realizamos testes A/B de criativos e otimizamos para ROI. Analisamos o comportamento do usuário e melhoramos as conversões."
+      },
+      {
+        "title": "MONITORAMENTO E ESCALONAMENTO",
+        "description": "Adaptamos estratégias às mudanças do mercado e escalamos as campanhas de melhor desempenho. Fornecemos ao cliente relatórios detalhados e análises."
+      }
+    ]
+  },
+  "Services": {
+    "title": "Nossos serviços",
+    "subtitle": "Oferecemos serviços de publicidade, análises, otimizações e branding. Ajudamos empresas a crescer e se destacar no mercado.",
+    "cards": [
+      {
+        "title": "Publicidade Direcionada e Geração de Leads",
+        "items": [
+          "Pequenas e médias empresas.",
+          "Startups – novas marcas.",
+          "Grandes empresas.",
+          "E-commerce e B2B."
+        ]
+      },
+      {
+        "title": "Análise de Campanhas Publicitárias",
+        "items": [
+          "Auditoria de atividades de marketing.",
+          "Otimização de anúncios.",
+          "Aprimoramento da estratégia de conteúdo.",
+          "Ferramentas analíticas para acompanhar o desempenho."
+        ]
+      },
+      {
+        "title": "Otimização de SEO",
+        "items": [
+          "Auditoria de site e pesquisa de palavras-chave.",
+          "Marketing de conteúdo e link building.",
+          "Otimização técnica.",
+          "Otimização técnica."
+        ]
+      },
+      {
+        "title": "Banners e Logotipo",
+        "items": [
+          "Adaptação a diferentes formatos.",
+          "Design de banners publicitários.",
+          "Adaptação a diferentes formatos."
+        ]
+      }
+    ]
+  },
+  "PortfolioSection": {
+    "title": "Portfólio",
+    "subtitle": "Nós criamos estratégias efetivas, conteúdo único e campanhas eficientes que trazem resultados. Veja nossas soluções.",
+    "cards": [
+      "Kit de Lançamento de Marca para uma Startup de tecnologia",
+      "Promoção digital de uma marca de roupas",
+      "Desenvolvimento de uma estratégia de conteúdo para uma joalheria",
+      "Branding e desenvolvimento de logo para uma cafeteria"
+    ]
+  },
+  "Contact": {
+    "title": "Entre em contato",
+    "content": "Nos contate hoje e deixe sua marca reconhecível!",
+    "error": "* campo obrigatório",
+    "button": "Enviar",
+    "inputs": {
+      "name": {
+        "label": "nome",
+        "placeholder": "Seu nome"
+      },
+      "email": {
+        "label": "email",
+        "placeholder": "Seu Email"
+      },
+      "message": {
+        "label": "mensagem",
+        "placeholder": "Sua Mensagem"
+      }
+    }
+  }
+}
