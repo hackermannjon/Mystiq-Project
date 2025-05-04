@@ -29,13 +29,33 @@ export const NavLink = styled(Link)`
   }
 `;
 
+export const Text = styled("p")`
+  font-size: 14px;
+`;
+
+export const LeftSection = styled("div")`
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+`;
+
+export const RightSection = styled("div")`
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  height: 100%;
+`;
+
 export const Extra = styled("section")`
-  background: rgb(241, 242, 243);
+  background: #1a1a18;
   position: relative;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   padding-bottom: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 60px 200px;
 `;
 
 export const LogoContainer = styled("div")`
@@ -88,13 +108,12 @@ export const Empty = styled("div")`
 `;
 
 export const FooterContainer = styled("div")`
-  max-width: 510px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   transition: all 0.1s ease-in-out;
+  margin-bottom: 1rem;
 
   a {
     &:hover,
@@ -129,7 +148,7 @@ export const FooterContainer = styled("div")`
 export const Language = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
+  color: #fff;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -139,15 +158,9 @@ export const Language = styled("h4")`
 export const Label = styled("label")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
+  color: #fff;
   display: block;
-  margin-bottom: 2rem;
   font-family: "Motiva Sans Bold", serif;
-
-  @media screen and (max-width: 414px) {
-    padding: 1.5rem 0;
-    margin-bottom: 1rem;
-  }
 `;
 
 export const LanguageSwitch = styled("div")`
