@@ -25,7 +25,7 @@ const Home = () => {
       <PortfolioSection />
       <Contact
         title={"ENTRE EM CONTATO"}
-        content={"Nos contate hoje e vamos deixar sua marca reconhecível!"}
+        content={"Nos contate hoje e deixe sua marca reconhecível!"}
         id="contact"
       />
     </Container>
